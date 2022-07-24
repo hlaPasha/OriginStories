@@ -1,1 +1,1 @@
-# orginStories
+# originStories
