@@ -1,0 +1,30 @@
+.a {
+	color:rgb(205, 156, 44);
+	text-decoration: none;
+	font-weight: 3em;
+    font-size:x-large;
+	font-family:cursive;
+	margin-right: 20px;
+    padding: 50px;
+}
+
+.a:hover {
+    color: white;
+    /*padding: 30px;*/
+}
+
+
+.container_about
+{
+    background-color:#252525;
+    color:rgb(205, 156, 44)
+}
+btn
+{
+   color: rgb(205, 156, 44);
+    
+}
+h2
+{
+    font-family:serif;
+}
