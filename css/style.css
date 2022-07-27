@@ -1,0 +1,58 @@
+body
+{
+    background-color:rgb(240, 232, 225)
+}
+
+.btn-primary
+  {
+    border-color: #262627;
+    border-style:dotted;
+    background: transparent;
+color:rgb(205, 156, 44);
+  }
+
+  .btn-primary:hover
+  {
+    background:#262627;
+color:rgb(205, 156, 44);
+  }
+
+  .carousel-caption
+  {
+    position: absolute;
+   top: 8%;
+    left: 10%;
+    z-index: 20;
+    color: black
+  }
+
+a
+{
+	font-weight: 3em;
+    font-size:x-large;
+	font-family:cursive;
+    color:rgb(205, 156, 44);
+	text-decoration: none;
+	margin-right: 20px;
+    padding: 50px;
+}
+
+a:hover {
+    color: rgb(240, 232, 225);
+    
+    /*padding: 30px;*/
+}
+ 
+section{
+    padding: 60px 0;
+  }
+
+.container_about
+{
+    background-color:#252525;
+    color:rgb(205, 156, 44)
+}
+h2
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
