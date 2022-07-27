@@ -15,6 +15,7 @@ color:rgb(205, 156, 44);
   {
     background:#262627;
 color:rgb(205, 156, 44);
+align-self: center;
   }
 
   .carousel-caption
@@ -25,7 +26,15 @@ color:rgb(205, 156, 44);
     z-index: 20;
     color: black
   }
+.card-subtitle 
 
+{
+  position: absolute;
+  left:5%;
+  top:45%;
+  padding-bottom: 10%;
+  
+}
 a
 {
 	font-weight: 3em;
