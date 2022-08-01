@@ -2,23 +2,14 @@
 <html>
 
 <head>
-
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="css/style.css">
-  <title>Origin Stories</title>
+     <title>Origin Stories</title>
 
 </head>
 
@@ -52,9 +43,20 @@
           <li class="nav-item">
             <a href="#">Ancedotes</a>
           </li>
-          <li class="nav-item ">
-            <a href="#">Events</a>
-          </li>
+
+          <div>
+            <li class="dropdown" display="dropdown">
+              <a  class=" dropdown-toggle" data-bs-toggle="dropdown">
+                Events
+              </a>
+
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="#">Ancient History</a></li>
+                <li><a class="dropdown-item" href="#">Middle Ages</a></li>
+                <li><a class="dropdown-item" href="#">Modern History</a></li>
+              </ul>
+            </li>
+          </div>
 
         </ul>
       </div>
@@ -64,8 +66,6 @@
 
 
   <!--  MAIN -->
-
-
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -91,79 +91,74 @@
         </div>
       </div>
 
-</div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
+  <!-- HUMANS -->
+  <section id="humans" class="mt-0">
 
-
-
-    <!-- HUMANS -->
-    <section id="humans" class="mt-5">
-
-      <div class="container-lg" style="border:solid rgb(205, 156, 44) ">
-        <div class="text-center">
-          <h2>Humans</h2>
-          <p class="lead text-muted"> learn more and more about worthy people journeys</p>
+    <div class="container-lg border-5" style="border-bottom:solid rgb(205, 156, 44) ">
+      <div class="text-center">
+        <h2>Humans</h2>
+        <p class="lead text-muted"> learn more and more about worthy people journeys</p>
+      </div>
+      <div class=" row my-5 align-items-center justify-content-center">
+        <div class="col-9 col-lg-4 ">
+          <div class="card " style="width: 18rem;"
+          onmouseover="bigCard(this)" onmouseout="normalCard(this)">
+            <img id="khayamImg" src="img/character3.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(240, 232, 225)">
+              <h5 class="card-title">Omar Khayyam</h5>
+              <p class="card-text">1048-1013</p>
+              <a href="#" class="btn btn-primary "> Read More</a>
+            </div>
+          </div>
         </div>
-        <div class=" row my-5 align-items-center justify-content-center">
-          <div class="col-9 col-lg-4 ">
-            <div class="card " style="width: 18rem;">
-              <img src="img/character3.jpg" class="card-img-top" alt="...">
-              <div class="card-body" style="background-color:rgb(240, 232, 225)">
-                <h5 class="card-title">Omar Khayyam</h5>
-                <p class="card-text">1048-1013</p>
-                <a href="#" class="btn btn-primary "> Read More</a>
-              </div>
+        <div class="col-9 col-lg-4">
+          <div class="card border-2" style="width:18rem;" 
+          onmouseover="bigCard(this)" onmouseout="normalCard(this)">
+            <img src="img/charcter1.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(240, 232, 225)">
+              <h5 class="card-title"> Suphi Bereket </h5>
+              <p class="card-text"> 1889-1939</p>
+              <a href="#" class="btn btn-primary "> Read More</a>
             </div>
           </div>
-          <div class="col-9 col-lg-4">
-            <div class="card border-2" style="width: 18rem;">
-              <img src="img/charcter1.jpg" class="card-img-top" alt="...">
-              <div class="card-body" style="background-color:rgb(240, 232, 225)">
-                <h5 class="card-title"> Suphi Bereket </h5>
-                <p class="card-text"> 1889-1939</p>
-                <a href="#" class="btn btn-primary "> Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-8 col-lg-4 col-xl-3">
-            <div class="card " style="width: 18rem;">
-              <img src="img/character2.jpg" class="card-img-top" alt="...">
-              <div class="card-body" style="background-color:rgb(240, 232, 225)">
-                <h5 class="card-title">Sami Drubi</h5>
-                <p class="card-text">1921-1976</p>
-                <a href="#" class="btn btn-primary"> Read More</a>
-              </div>
-            </div>
-          </div>
-
-
         </div>
+        <div class="col-9 col-lg-4 col-xl-3">
+          <div class="card " style="width: 18rem;"
+          onmouseover="bigCard(this)" onmouseout="normalCard(this)">
+            <img src="img/character2.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(240, 232, 225)">
+              <h5 class="card-title">Sami Drubi</h5>
+              <p class="card-text">1921-1976</p>
+              <a href="#" class="btn btn-primary" onclick="humansFunc()"> Read More</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ANCEDOTES -->
+  <section id="ancedotes" >
+    <div class="container-lg border-5" style="border-bottom:solid rgb(205, 156, 44) ">
+      <div class="text-center">
+        <h2>Ancedotes</h2>
+        <p class="lead text-muted"> enjoy reading old funny stories</p>
       </div>
 
-
-    </section>
-
-    <!-- ANCEDOTES -->
-    <section id="ancedotes" class="id mt-5">
-      <div class="container-lg" style="border:solid rgb(205, 156, 44) ">
-        <div class="text-center">
-          <h2>Ancedotes</h2>
-          <p class="lead text-muted"> enjoy reading old funny stories</p>
-        </div>
-      
-
-      <div class=" row my-5 align-items-center justify-content-center">
+      <div class=" row my-5 px-5 align-items-center justify-content-center">
         <div class="col-9 col-lg-4 ">
           <div class="card  border-warning ml-3" style="width: 18rem; background-color:rgb(240, 232, 225)">
             <div class="card-body">
@@ -176,7 +171,7 @@
           </div>
         </div>
         <div class="col-9 col-lg-4">
-          <div class="card  border-warning ml-3" style="width: 18rem; background-color:rgb(240, 232, 225)">
+          <div class="card  border-warning ml-3 " style="width: 18rem; background-color:rgb(240, 232, 225)">
             <div class="card-body">
               <h4 class="card-title text-center">Little Things</h4>
               <h6 class="card-subtitle mb-2 pl-4 text-muted  justify-content-center ">by Samira Azzam</h6>
@@ -187,7 +182,7 @@
           </div>
 
         </div>
-        <div class="col-8 col-lg-4 col-xl-3">
+        <div class="col-9 col-lg-4 ">
           <div class="card border-warning ml-3" style="width: 18rem; background-color:rgb(240, 232, 225)">
             <div class="card-body">
               <h4 class="card-title text-center">So What?</h4>
@@ -197,53 +192,67 @@
               <a href="#" class="card-link  btn btn-primary  d-grid gap-2 col-6 mx-auto" type="button">Read</a>
             </div>
           </div>
-          </div>
-      </div>
-    </div>
-    </section>
-
-
-   
-    <!-- *******  ABOUT *********-->
-    <div class="container_about mt-5  shadow-sm">
-      <div class="container text-center pt-4">
-        <h2>About Origin Stories</h2>
-        <div class="row  justify-content-center pb-3 pt-5">
-          <div class="col-md-4 "><a href="#" class="a">Vision And Values</a></div>
-          <div class="col-md-4"><a href="#" class="a"> Our People </a></div>
-          <div class="col-md-4"><a href="#" class="a">Contact US</a></div>
-
         </div>
       </div>
     </div>
-    
+  </section>
 
 
-<footer>
-  <div class="text-center p-4" style="background-color:#262627; color:rgb(205, 156, 44)">
-    © Copyright 2022. All Rights Reserved. | Origin Stories
-   
+  <!-- SUBSCRIBE -->
+  <div class="container  w-25 border-5 justify-content-center py-5 px-5" style="border:solid rgb(234, 5, 5); background-color:rgb(103, 71, 122)">
+<form id="subForm" class="form  px-3 border-danger">
+<span class="text-center " style="color: rgb(234, 5, 5)">   
+  <h6 > Subscribe to receive the Daily Report</h6> 
+  </span>
+  <br>
+  <div class="mb-3">
+      <input type="text" name="First and Last Name" placeholder="First and Last name">
+    </div>
+    <div class="mb-3 ">
+      <!--<lable for="email" class="form-label">  Email</lable>-->
+      <input type="text " name="Email"  placeholder="Email" >
+    </div>
+  <div class="col-2 pb-5">
+    <button class=" btn-danger btn-lg border-5 my-4" type="submit">Subscribe</button>
   </div>
-</footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-      crossorigin="anonymous"></script>
+  </div>
+</form>
+</div>
 
 
 
 
 
 
+  <!-- *******  ABOUT *********-->
+  <div class="container_about mt-5  shadow-sm">
+    <div class="container text-center pt-4">
+      <h2>About Origin Stories</h2>
+      <div class="row  justify-content-center pb-3 pt-5">
+        <div class="col-md-4 "><a href="#" class="a">Vision And Values</a></div>
+        <div class="col-md-4"><a href="#" class="a"> Our People </a></div>
+        <div class="col-md-4"><a href="#" class="a">Contact US</a></div>
+
+      </div>
+    </div>
+  </div>
 
 
+  <!-- ***** FOOTER *******-->
+  <footer>
+    <div class="text-center p-4" style="background-color:#262627; color:rgb(205, 156, 44)">
+      © Copyright 2022. All Rights Reserved. | Origin Stories
+
+    </div>
+  </footer>
+
+
+
+
+  <!-- ****** javaScript ******-->
+ 
+<script src="index.js"></script>
 </body>
-
-
 
 </html>

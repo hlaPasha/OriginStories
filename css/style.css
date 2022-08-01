@@ -1,23 +1,27 @@
 body
 {
-    background-color:rgb(240, 232, 225)
+    background-color:rgb(251, 253, 255)
 }
 
 .btn-primary
   {
     border-color: #262627;
-    border-style:dotted;
+    border-style:solid;
     background: transparent;
-color:rgb(205, 156, 44);
+ color:rgb(205, 156, 44);
   }
 
   .btn-primary:hover
   {
     background:#262627;
-color:rgb(205, 156, 44);
-align-self: center;
+    color:rgb(205, 156, 44);
+    align-self: center;
+    border-color: #262627;
   }
-
+.dropdown-menu      { background-color:#262627; }
+.dropdown-menu:hover{ color: rgb(226, 209, 193);}
+.dropdown-item{ color:rgb(205, 156, 44)}
+.dropdown-item:hover {  background:#e8dbb3;}
   .carousel-caption
   {
     position: absolute;
@@ -51,9 +55,13 @@ a:hover {
     
     /*padding: 30px;*/
 }
+ .form-control-color {
+  color:rgb(114, 15, 107)
+ }
+ 
  
 section{
-    padding: 60px 0;
+    padding:20px 0;
   }
 
 .container_about
