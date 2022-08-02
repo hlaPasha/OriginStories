@@ -22,8 +22,12 @@ function loadPage()
   alert("Thank You for visiting Origin Sotries");
 }
 
-// 4- Fourth Event
-elm.ondblclick = function(){alert("you've double clicked to the human");}
+// 4- Fourth Event 
+
+function redColored() {
+  document.getElementById("elm").focus();
+
+}
 
 // 5- Fifth Event 
 function upperCase() {
