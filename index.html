@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body onload="loadPage()">
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-md  pt-2 pb-2 " style="background-color:#262627">
     <div class="container-xxl">
@@ -62,8 +62,7 @@
       </div>
     </div>
   </nav>
-
-
+</div>
 
   <!--  MAIN -->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -107,14 +106,14 @@
 
     <div class="container-lg border-5" style="border-bottom:solid rgb(205, 156, 44) ">
       <div class="text-center">
-        <h2>Humans</h2>
+        <h2 id="elm" ondclick="toHighLight">Humans</h2>
         <p class="lead text-muted"> learn more and more about worthy people journeys</p>
       </div>
       <div class=" row my-5 align-items-center justify-content-center">
         <div class="col-9 col-lg-4 ">
           <div class="card " style="width: 18rem;"
           onmouseover="bigCard(this)" onmouseout="normalCard(this)">
-            <img id="khayamImg" src="img/character3.jpg" class="card-img-top" alt="...">
+            <img id="khayamImg" src="img/character3.jpg" class="card-img-top" alt="..." >
             <div class="card-body" style="background-color:rgb(240, 232, 225)">
               <h5 class="card-title">Omar Khayyam</h5>
               <p class="card-text">1048-1013</p>
@@ -144,6 +143,7 @@
             </div>
           </div>
         </div>
+        <br>
 
 
       </div>
@@ -199,20 +199,20 @@
 
 
   <!-- SUBSCRIBE -->
-  <div class="container  w-25 border-5 justify-content-center py-5 px-5" style="border:solid rgb(234, 5, 5); background-color:rgb(103, 71, 122)">
+  <div class="container  w-25 border-5 justify-content-center py-5 px-5">
 <form id="subForm" class="form  px-3 border-danger">
 <span class="text-center " style="color: rgb(234, 5, 5)">   
-  <h6 > Subscribe to receive the Daily Report</h6> 
+  <h5 > Subscribe to receive the Daily Report</h5> 
   </span>
   <br>
   <div class="mb-3">
-      <input type="text" name="First and Last Name" placeholder="First and Last name">
+      <input id="fullname" type="text" name="First and Last Name" placeholder="First and Last name" onchange="upperCase()">
     </div>
     <div class="mb-3 ">
       <!--<lable for="email" class="form-label">  Email</lable>-->
       <input type="text " name="Email"  placeholder="Email" >
     </div>
-  <div class="col-2 pb-5">
+  <div class=" pb-5">
     <button class=" btn-danger btn-lg border-5 my-4" type="submit">Subscribe</button>
   </div>
 
@@ -252,7 +252,7 @@
 
   <!-- ****** javaScript ******-->
  
-<script src="index.js"></script>
+<script src="javaScript/index.js"></script>
 </body>
 
 </html>
