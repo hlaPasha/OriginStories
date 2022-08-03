@@ -12,8 +12,8 @@
      <title>Origin Stories</title>
 
 </head>
-
-<body onload="loadPage()">
+<!-- onload="loadPage()"-->
+<body >
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg  pt-2 pb-2 " style="background-color:#262627">
     <div class="container-xxl">
@@ -118,7 +118,9 @@
             <div class="card-body" style="background-color:rgb(240, 232, 225)">
               <h5 class="card-title">Omar Khayyam</h5>
               <p class="card-text">1048-1013</p>
-              <a href="#" class="btn btn-primary "> Read More</a>
+              <div id="khayyam">
+              <button class="btn btn-primary" onclick="khayyamInfo()"> Read More</button>
+          </div>
             </div>
           </div>
         </div>
@@ -127,9 +129,11 @@
           onmouseover="bigCard(this)" onmouseout="normalCard(this)">
             <img src="img/charcter1.jpg" class="card-img-top" alt="...">
             <div class="card-body" style="background-color:rgb(240, 232, 225)">
-              <h5 class="card-title"> Suphi Bereket </h5>
+              <h5 class="card-title"> Suphi Barakat </h5>
               <p class="card-text"> 1889-1939</p>
-              <a href="#" class="btn btn-primary "> Read More</a>
+            <div id="barakat"> 
+              <button class="btn btn-primary" onclick="barakatInfo()"> Read More</button>
+            </div>
             </div>
           </div>
         </div>
@@ -138,15 +142,14 @@
           onmouseover="bigCard(this)" onmouseout="normalCard(this)">
             <img src="img/character2.jpg" class="card-img-top" alt="...">
             <div class="card-body" style="background-color:rgb(240, 232, 225)">
-              <h5 class="card-title">Sami Drubi</h5>
+              <h5 class="card-title">Sami Droubi</h5>
               <p class="card-text">1921-1976</p>
-              <a href="#" class="btn btn-primary" onclick="humansFunc()"> Read More</a>
+             <div id="droubi">
+              <button type="button" class="btn btn-primary" onclick="droubiInfo()"> Read More</button>
+              </div>
             </div>
           </div>
         </div>
-        <br>
-
-
       </div>
     </div>
   </section>
@@ -198,7 +201,6 @@
     </div>
   </section>
 
-
   <!-- SUBSCRIBE -->
   <div class="container  w-25 border-5 justify-content-center py-5 px-5">
 <form id="subForm" class="form  px-3 border-danger">
@@ -221,11 +223,6 @@
 </form>
 </div>
 
-
-
-
-
-
   <!-- *******  ABOUT *********-->
   <div class="container_about mt-5  shadow-sm">
     <div class="container text-center pt-4">
@@ -239,7 +236,6 @@
     </div>
   </div>
 
-
   <!-- ***** FOOTER *******-->
   <footer>
     <div class="text-center p-4" style="background-color:#262627; color:rgb(205, 156, 44)">
@@ -248,11 +244,7 @@
     </div>
   </footer>
 
-
-
-
   <!-- ****** javaScript ******-->
- 
 <script src="javaScript/index.js"></script>
 </body>
 
